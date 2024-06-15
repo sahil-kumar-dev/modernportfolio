@@ -69,8 +69,8 @@ export const FloatingNav = ({
                             "relative dark:text-neutral-50 items-center flex space-x-1 text-neutral-600 dark:hover:text-neutral-300 hover:text-neutral-500"
                         )}
                     >
-                        {/* <span className="block sm:hidden">{navItem.id == 2 && <PiShoppingBagFill/>}</span> */}
-                        <span className="hidden sm:block text-sm">{navItem.name}</span>
+                        {/* <div className="hidden md:block text-sm">{navItem.name}</div> */}
+                        <div className="md:hidden">{navItem.id == 2 && <PiShoppingBagFill/>}adf</div>
                     </Link>
                 ))}
             </motion.div>

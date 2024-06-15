@@ -26,7 +26,7 @@ const Hero = () => {
                     <p className="text-white text-center md:tracking-wider text-sm md:text-lg lg:text-2xl">
                         Hi, I&apos;m Sahil, a next js developer
                     </p>
-                    <a href="#about">
+                    <a href="#about" className='mt-4'>
                         <MagicButton
                             title="show my work"
                             icon={<FaLocationArrow/>}

@@ -8,11 +8,11 @@ import { PinContainer } from "./ui/Pin";
 const RecentProject = () => {
 	return (
 		<div className="py-20">
-			<h1 className="heading">
+			<h1 className="heading text-white">
 				A small selection of{" "}
 				<span className="text-purple">recent projects</span>
 			</h1>
-			<div className="flex flex-wrap items-center justify-center p-4 gap-x-24 gap-y-8 mt-10">
+			<div className="flex flex-wrap items-center justify-center p-4 gap-x-24 mt-10">
 				{projects.map((item) => (
 					<div
 						className="lg:min-h-[32.5rem] sm:h-[41rem] h-[32rem] flex items-center justify-center sm:w-96 w-[80vw]"
@@ -28,15 +28,15 @@ const RecentProject = () => {
 									style={{ backgroundColor: "#13162D" }}
 								>
 									<img src="/bg.png" alt="bgimg" />
+									<img
+										src={item.img}
+										alt=""
+										className="absolute top-0 -rotate-3"
+									/>
 								</div>
-								<img
-									src={item.img}
-									alt="cover"
-									className="z-10 absolute bottom-0"
-								/>
 							</div>
 
-							<h1 className="font-bold lg:text-2xl md:text-xl text-base line-clamp-1">
+							<h1 className="font-bold lg:text-2xl md:text-xl text-base line-clamp-1 text-white">
 								{item.title}
 							</h1>
 
