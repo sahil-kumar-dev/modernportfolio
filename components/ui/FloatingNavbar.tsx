@@ -9,6 +9,9 @@ import {
 import { cn } from "@/utils/cn";
 import Link from "next/link";
 import { PiShoppingBagFill } from "react-icons/pi"
+import { IoMdContact } from "react-icons/io"
+import { VscPreview } from "react-icons/vsc"
+import { FaBolt } from "react-icons/fa"
 
 export const FloatingNav = ({
     navItems,
@@ -69,8 +72,13 @@ export const FloatingNav = ({
                             "relative dark:text-neutral-50 items-center flex space-x-1 text-neutral-600 dark:hover:text-neutral-300 hover:text-neutral-500"
                         )}
                     >
-                        {/* <div className="hidden md:block text-sm">{navItem.name}</div> */}
-                        <div className="md:hidden">{navItem.id == 2 && <PiShoppingBagFill/>}adf</div>
+                        <div className="hidden md:block text-sm">{navItem.name}</div>
+                        <div className="md:hidden">
+                            {navItem.id == 1 && <PiShoppingBagFill/>}
+                            {navItem.id == 2 && <FaBolt />}
+                            {navItem.id == 3 && <VscPreview />}
+                            {navItem.id == 4 && <IoMdContact/>}
+                        </div>
                     </Link>
                 ))}
             </motion.div>
