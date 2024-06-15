@@ -101,8 +101,8 @@ export const BentoGridItem = ({
                         id == 3 &&
                         <div className="flex gap-1 lg:gap-5 w-fit absolute -right-3 lg:-right-2 -top-4 -rotate-12">
                             <div className="flex flex-col gap-3 lg:gap-3">
-                                {['React.js', 'Next.js', 'Typescript'].map((item) => (
-                                    <span className="py-2 lg:py-3 lg:px-3 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132e] text-white-100">
+                                {['React.js', 'Next.js', 'Typescript'].map((item,idx) => (
+                                    <span key={idx} className="py-2 lg:py-3 lg:px-3 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132e] text-white-100">
                                         {item}
                                     </span>
                                 ))}
@@ -110,8 +110,8 @@ export const BentoGridItem = ({
                             </div>
                             <div className="flex flex-col gap-3 lg:gap-3">
                                 <span className="py-2 lg:py-3 lg:px-3 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132e] text-transparent">I</span>
-                                {['Node.js', 'Express.js', 'Mongo DB'].map((item) => (
-                                    <span className="py-2 lg:py-3 lg:px-3 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132e] text-white-100">
+                                {['Node.js', 'Express.js', 'Mongo DB'].map((item,idx) => (
+                                    <span key={idx} className="py-2 lg:py-3 lg:px-3 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132e] text-white-100">
                                         {item}
                                     </span>
                                 ))}
