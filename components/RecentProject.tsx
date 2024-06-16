@@ -15,8 +15,8 @@ const RecentProject = () => {
 				<span className="text-purple">recent projects</span>
 			</h1>
 			<div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 mt-10 ">
-				{projects.map((item) => (
-					<div className="h-64 border rounded-lg" data-aos="fade-up">
+				{projects.map((item,idx) => (
+					<div key={idx} className="h-64 border rounded-lg" data-aos="fade-up">
 
 					</div>
 				))}
