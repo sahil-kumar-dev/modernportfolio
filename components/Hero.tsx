@@ -1,8 +1,10 @@
 import React from 'react'
 import { Spotlight } from './ui/SpotLight'
-import TextGenerateEffect  from './ui/TextGenerateEffect'
+import TextGenerateEffect from './ui/TextGenerateEffect'
 import MagicButton from './ui/MagicButton'
 import { FaLocationArrow } from 'react-icons/fa6'
+import { FlipWords } from './ui/FlipWords'
+import { IoCall } from "react-icons/io5"
 
 const Hero = () => {
 
@@ -21,19 +23,22 @@ const Hero = () => {
             </div>
             <div className="flex justify-center relative my-20 z-10">
                 <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center gap-4">
-                    <h1 className='text-white uppercase tracking-widest max-w-80 text-xs'>Dynamic Web magic with next js</h1>
-                    
+                    <h1 className='text-white uppercase tracking-widest max-w-80 text-xs'>Animate Your Product Story</h1>
+
                     <TextGenerateEffect
-                        text={"Transforming Concepts into Seamless User Experiences"}
+                        text={"Empower The Product To Share I'ts Story"}
                     />
-                    
-                    <p className="text-white text-center md:tracking-wider text-sm md:text-lg lg:text-2xl">
-                        Hi, I&apos;m Sahil, a next js developer
-                    </p>
+                    <div className="flex justify-center items-center px-4">
+                        <div className="text-4xl mx-auto font-normal text-neutral-600 dark:text-neutral-400">
+                            <FlipWords
+                                words={['Roarpix', '3D Animation Studio']}
+                            />
+                        </div>
+                    </div>
                     <a href="#about" className=''>
                         <MagicButton
-                            title="show my work"
-                            icon={<FaLocationArrow />}
+                            title="Book a Free Call"
+                            icon={<IoCall />}
                             position='right'
                         />
                     </a>

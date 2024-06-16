@@ -1,3 +1,5 @@
+import AboutCompany from "@/components/AboutCompany";
+import Clients from "@/components/Clients";
 import Experience from "@/components/Experience";
 import Footer from "@/components/Footer";
 import Grid from "@/components/Grid";
@@ -6,16 +8,20 @@ import RecentProject from "@/components/RecentProject";
 import { FloatingNav } from "@/components/ui/FloatingNavbar";
 import { TracingBeam } from "@/components/ui/TackingBeam";
 import { navItems } from "@/data";
+import AosInit from "@/utils/AosInit";
 
 export default function Home() {
 	return (
 		<main className="relative bg-black-100 flex justify-center items-center flex-col overflow-hidden mx-auto ">
 			<TracingBeam>
+					<AosInit/>
 					<FloatingNav navItems={navItems} />
 					<Hero />
 					<Grid />
 					<RecentProject />
+					<Clients/>
 					<Experience />
+					<AboutCompany/>
 					<Footer/>
 			</TracingBeam>
 		</main>

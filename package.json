@@ -13,6 +13,7 @@
     "@react-three/fiber": "^8.16.8",
     "@tabler/core": "^1.0.0-beta20",
     "@tabler/icons-react": "^3.6.0",
+    "aos": "^2.3.4",
     "clsx": "^2.1.1",
     "framer-motion": "^11.2.10",
     "mini-svg-data-uri": "^1.4.4",
@@ -30,6 +31,7 @@
     "three-globe": "^2.31.0"
   },
   "devDependencies": {
+    "@types/aos": "^3.0.7",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
